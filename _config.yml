@@ -1,0 +1,11 @@
+# Site settings
+title: Do Interactive
+email: lets@dointeractive.ru
+description: 'Команда разработчиков Интернет-проектов и стартапов'
+url: 'http://dointeractive.ru'
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+exclude: ['cookbooks', 'Vagrantfile', 'Gemfile', 'Gemfile.lock', 'README.md']
