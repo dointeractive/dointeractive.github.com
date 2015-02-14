@@ -1,7 +1,10 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-raise 'run "git submodule update --init" before "vagrant up"' if Dir['cookbooks/*'].empty?
+# cause submodules is too mainstream
+if Dir['cookbooks/*'].empty?
+  `git clone -b dointeractive-github-com https://github.com/dointeractive/cookbooks`
+end
 
 Vagrant.configure('2') do |config|
   config.vm.box = 'chef/ubuntu-12.04'

@@ -2,4 +2,5 @@
 .vagrant
 /.bundle
 /_site/*
+/cookbooks/*
 
