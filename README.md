@@ -1,19 +1,10 @@
-Requirements
-===
-
-- vagrant-berkshelf plugin v.1.2.0
-- vagrant-omnibus plugin v1.1.0
-
 Local installation
 ===
 
+Jekyll server is started by vagrant provision so all you have to do is just run `vagrant up`.  
+Or if you halted your machine you could just run `vagrant up --provision` to start a jekyll or you can always start it manually:
 ```bash
-git clone --recursive https://github.com/dointeractive/dointeractive.github.com
-# for already initialized repo use
-# git submodule update --init --recursive
 vagrant up
 vagrant ssh
-cd /vagrant
-bundle
-bundle exec jekyll serve --watch
+docker start jekyll
 ```
