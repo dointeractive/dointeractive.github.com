@@ -1,6 +1,20 @@
 <footer class="footer">
-  <div class="container">
+  <div class="container" itemscope itemtype="http://schema.org/Organization">
     <hr>
-    <p>© Do interactive 2015</p>
+    <div class="contacts">
+      <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+        <span itemprop="addressLocality">Москва</span>,&nbsp;
+        <span itemprop="streetAddress">ул.&nbsp;Средняя&nbsp;Первомайская,&nbsp;3</span>
+      </p>
+
+      <p itemprop="telephone">+7 (495) 532-57-89</p>
+
+      <p>
+        <a href="mailto:{{ site.email }}" itemprop="email">{{ site.email }}</a>
+      </p>
+
+      <p itemprop="email">skype: dointeractive</p>
+    </div>
+    <p>© 2013-2015 <span itemprop="name">Do Interactive</span></p>
   </div>
 </footer>

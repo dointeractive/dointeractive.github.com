@@ -75,8 +75,11 @@ hr {
   font-size: 18px;
 }
 
-.header__email {
-  float: right;
+
+.contacts {
+  p {
+    margin: 5px 0;
+  }
 }
 
 @media (max-width: 767px) {
