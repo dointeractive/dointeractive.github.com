@@ -8,4 +8,4 @@ url: 'http://dointeractive.ru'
 markdown: kramdown
 permalink: pretty
 
-exclude: ['cookbooks', 'Vagrantfile', 'Gemfile', 'Gemfile.lock', 'README.md']
+exclude: ['Dockerfile', 'Vagrantfile', 'Gemfile', 'Gemfile.lock', 'README.md']
